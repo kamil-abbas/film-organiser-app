@@ -44,7 +44,7 @@ class Favorites extends Component {
           {this.props.favoriteMovies.map((item, index) => {
             return (
               <div key={index}>
-                <li key={item.imdbID} className="favorite__movie">
+                <li className="favorite__movie">
                   {item.Title} {item.Year}
                   <button
                     type="delete"
