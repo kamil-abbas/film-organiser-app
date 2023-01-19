@@ -18,7 +18,6 @@ export const reducer = (state = initialState, action) => {
       };
 
     case "DEL_FROM_FAV":
-      console.log("DELETED");
       return {
         ...state,
         favoriteMovies: state.favoriteMovies.filter(
