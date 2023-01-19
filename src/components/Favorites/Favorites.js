@@ -41,9 +41,9 @@ class Favorites extends Component {
           defaultValue="Yeni siyahı"
         />
         <ul className="favorites__list">
-          {this.props.favoriteMovies.map((item) => {
+          {this.props.favoriteMovies.map((item, index) => {
             return (
-              <>
+              <div key={index}>
                 <li key={item.imdbID} className="favorite__movie">
                   {item.Title} {item.Year}
                   <button
@@ -54,7 +54,7 @@ class Favorites extends Component {
                   </button>
                 </li>
                 <br />
-              </>
+              </div>
             );
           })}
         </ul>
